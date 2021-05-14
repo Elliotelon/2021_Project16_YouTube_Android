@@ -11,27 +11,27 @@
         android:layout_width="0dp"
         android:layout_height="250dp"
         android:background="@color/purple_200"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/playerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#00ff00"
-        app:layout_constraintBottom_toBottomOf="@id/mainContainerLayout"
+        app:layout_constraintTop_toTopOf="@id/mainContainerLayout"
         app:layout_constraintStart_toStartOf="@id/mainContainerLayout"
-        app:layout_constraintTop_toTopOf="@id/mainContainerLayout" />
+        app:layout_constraintBottom_toBottomOf="@id/mainContainerLayout" />
 
     <ImageView
         android:id="@+id/bottomPlayerControlButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
-        app:layout_constraintBottom_toBottomOf="@id/mainContainerLayout"
+        app:layout_constraintTop_toTopOf="@id/mainContainerLayout"
         app:layout_constraintEnd_toEndOf="@id/mainContainerLayout"
-        app:layout_constraintTop_toTopOf="@id/mainContainerLayout" />
+        app:layout_constraintBottom_toBottomOf="@id/mainContainerLayout" />
 
     <TextView
         android:id="@+id/bottomTitleTextView"
@@ -42,19 +42,19 @@
         android:ellipsize="end"
         android:maxLines="1"
         android:singleLine="true"
-        app:layout_constraintBottom_toBottomOf="@id/bottomPlayerControlButton"
-        app:layout_constraintEnd_toStartOf="@id/bottomPlayerControlButton"
+        app:layout_constraintTop_toTopOf="@id/bottomPlayerControlButton"
         app:layout_constraintStart_toEndOf="@id/playerView"
-        app:layout_constraintTop_toTopOf="@id/bottomPlayerControlButton" />
+        app:layout_constraintEnd_toStartOf="@id/bottomPlayerControlButton"
+        app:layout_constraintBottom_toBottomOf="@id/bottomPlayerControlButton" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/fragmentRecyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainContainerLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mainContainerLayout" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
